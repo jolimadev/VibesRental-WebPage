@@ -204,7 +204,7 @@ nav .fa-bars {
 /*CALL TO ACTION TO BE HOST STYLE*/
 .cta {
     margin: 80px 0;
-    background-image: linear-gradient(to right, #3f2321, transparent), url(/images/banner-2.png); /*broun effect blur, efecto marron transparentoso hacia la derecha*/
+    background-image: linear-gradient(to right, #3f2321, transparent), url(./images/banner-2.png); /*broun effect blur, efecto marron transparentoso hacia la derecha*/
     background-size: cover;
     background-position: center;
     border-radius: 10px;
