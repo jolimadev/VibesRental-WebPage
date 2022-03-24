@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .fa-bars {
+    display: none;    /*hide the burger bars from desktop view*/
+}
+
+/*button register | boton de registro*/
+.register-btn {
+    padding: 8px 20px;;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.register-btn:hover {
+    background-color: #079a82;
+    box-shadow: 0px 15px 20px rgba(75, 78, 77, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+.register-btn:active {
+    transform: translateY(-1px);
+   }
+
+.container {
+    padding: 0 7%;
+}
+/*FIND YOUR STAY*/
+.header h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 22%;
+}
+
+/*SEARCH BAR-form ASKIING THE DATA*/
+
+.search-bar {
+    background: whitesmoke;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 30px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /*organize input's horizontal*/
+}
+
+.search-bar form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;  /*detele w color bg from the input*/
+}
+.search-bar form button{
+    background: #079a82; 
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+    background-color:  #079a82;
+    border: none;
+    border-bottom: 5px solid  #4b4a4a;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+   }
+   
+/*.search-bar form button { ver si reemplazar o no
+    background: #079a82; 
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+*/
+.search-bar form button:hover, button:active {
+    -webkit-transform: translate(0px,5px);
+    -ms-transform: translate(0px,5px);
+    transform: translate(0px,5px);
+    border-bottom: 1px solid #2ecc71;
+}
+.search-bar form button input {
+    width: 15px;
+    margin-top: 7px;
+}
+
+/*Location input*/
+
+.location-input {
+    flex: 1;
+}
+
+.search-bar form label {
+    font-weight: 600;
+}
+
+/*-----EXCLUSIVES-----------------*/
+.sub-title {
+    margin: 50px 0 20px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+} 
+
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px; /*the img got round effect, img queda redondeada*/
+}
+
+.exclusives div{
+    position: relative;
+}
+
+.exclusives div span {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+/*---------TRENDING PLACES-----------*/
+
+
+.trending {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div img {
+    width: 100%;
+    border-radius: 10px;
+}
+.trending h3 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/*CALL TO ACTION TO BE HOST STYLE*/
+.cta {
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(/images/banner-2.png); /*broun effect blur, efecto marron transparentoso hacia la derecha*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: white;
+}
+
+.cta h3{
+    font-size: 2rem;
+    line-height: 5.3vw; /*esapciado entre h3 y p*/
+    font-weight: 500;
+}
+
+.cta p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.cta-btn {
+        background: #079a82;
+        color: whitesmoke;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 12px 30px;
+        margin-top: 20px;
+        border-radius: 8px;
+        display: inline-block;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border: none;
+        border-bottom: 5px solid  #4b4a4a;
+        text-shadow: 0px -2px #27ae60;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+
+}
+
+.cta-btn:hover, cta-btn:active {
+        -webkit-transform: translate(0px,5px);
+        -ms-transform: translate(0px,5px);
+        transform: translate(0px,5px);
+        border-bottom: 1px solid #4b4a4a;
+}
+
+
+
+/*.cta-btn { let see if i change this or not
+    background: #079a82;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    text-decoration: underline;
+}*/
+
+/*------------Travellers Stories---------------*/
+
+.stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.stories div {
+    position: relative;
+    text-align: center;
+}
+
+.stories p {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+}
+.start-btn { 
+    background: #079a82;
+    padding: 15px;
+    margin: 60px auto;
+    color: whitesmoke;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    border-bottom: 5px solid  #4b4a4a;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0px -2px #27ae60;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.start-btn:hover, start-btn:active {
+    -webkit-transform: translate(0px,5px);
+ -ms-transform: translate(0px,5px);
+ transform: translate(0px,5px);
+ border-bottom: 1px solid #2ecc71;
+}
+/*
+
+.start-btn { let see later if a restore this or not
+    text-decoration: none;
+    background: #079a82;
+    color: #fff;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1.6rem;
+}
+.start-btn:hover {
+    text-decoration: underline;
+} */
+
+/*about US message*/
+
+.about-msg {
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.about-msg h2 {
+    font-size: 2rem;
+    margin-bottom: 30px; /*space with bottom of footer*/
+    font-weight: 500;
+}
+
+/*--------------FOOTER-----------------*/
+
+.footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a {
+    margin: 0 10px;  /*para centrar separar los icons*/
+    text-decoration: none;
+    color: #999;
+    font-size: 2rem;
+}
+
+.footer hr {
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.footer p {
+    padding-bottom: 15px ;
+}
+
+/*NAV UL ahref class ACTIVE from popular places*/
+
+.active {
+    position: relative;
+}
+.active::after {
+    content: '';
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+
+
+/*for small screen devices*/
+
+@media only screen and (max-width: 700px) {
+    .logo {
+        position: fixed;
+        top: 1%;
+        left:5%;
+    }
+    nav {
+        position: fixed;
+        top:0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav .nav-links {
+        margin: 10px 0;
+        display: block;
+    }
+    .register-btn{
+        margin: 0 15px 30px;
+        display: inline-block;
+
+    }
+    nav .fa-bars {  /*show the burer bars in resposive mobile view*/
+        display: block;
+        position: fixed;
+        top:4%;
+        right: 7%;
+        color: #fff;
+        font-size: 2rem;
+    }
+    .active::after {
+        left: -40px;
+        transform:translateX(0, -50%);
+        bottom: 50%;
+    }
+    .hidemenu {
+        max-height: 300px;
+    }
+    .header h1 {
+        padding-top: 200px;
+        font-size: 7vw; /*small fontsizw for small view*/
+    }
+
+    .search-bar{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+        position: relative; /*positioning search bottom */
+    }
+
+    .search-bar form {
+        display:block;
+    }
+    .search-bar form input {
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-bar form button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .sub-title{
+        font-size: 6vw;
+    }
+    .cta{
+        padding: 15% 5%;
+    }
+    .cta h3 {
+        font-size: 7vw;
+        line-height: 8vw;
+    }
+    .cta p {
+        font-size: 14px;
+    }
+    .cta-btn {
+        padding: 6px 15px; /* size inside know more btn*/
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    .stories p {
+    font-size: 1.4rem;
+    }
+    .about-msg {
+        font-size: 1rem;
+    }
+}
