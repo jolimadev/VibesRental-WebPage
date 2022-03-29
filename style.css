@@ -397,7 +397,24 @@ nav .fa-bars {
     border-radius: 2px;
 }
 
+/*----------------------2nd page list nav bar--------------------*/
+.navbar-white {
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);  /*shadow effect on the navbar*/
+}
 
+.navbar-white .nav-links li a {
+    color: #000;
+}
+
+nav.navbar-white .fa-bars  {
+    color: #079a82;
+    
+}
+
+nav.navbar-white .active::after {
+    background: #079a82;
+}
 
 /*for small screen devices*/
 
