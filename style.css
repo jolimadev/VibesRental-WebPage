@@ -23,7 +23,7 @@ nav {
 }
 
 .logo {
-    width: 100px;
+    width: 130px;
     cursor: pointer;
 }
 .nav-links li {
@@ -59,7 +59,7 @@ nav .fa-bars {
     text-decoration: none;
 }
 .register-btn:hover {
-    background-color: #079a82;
+    background-color: #005167;
     box-shadow: 0px 15px 20px rgba(75, 78, 77, 0.4);
     color: #fff;
     transform: translateY(-7px);
@@ -103,7 +103,7 @@ nav .fa-bars {
     background: transparent;  /*detele w color bg from the input*/
 }
 .search-bar form button{
-    background: #079a82; 
+    background: #005167; 
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -112,7 +112,7 @@ nav .fa-bars {
     cursor: pointer;
     color: #FFF;
     text-decoration: none;
-    background-color:  #079a82;
+    background-color:  #005167;
     border: none;
     border-bottom: 5px solid  #4b4a4a;
     -webkit-transition: all 0.1s;
@@ -133,7 +133,7 @@ nav .fa-bars {
     -webkit-transform: translate(0px,5px);
     -ms-transform: translate(0px,5px);
     transform: translate(0px,5px);
-    border-bottom: 1px solid #2ecc71;
+    border-bottom: 1px solid #C1FAFF;
 }
 .search-bar form button input {
     width: 15px;
@@ -224,7 +224,7 @@ nav .fa-bars {
 }
 
 .cta-btn {
-        background: #079a82;
+        background: #005167;
         color: whitesmoke;
         cursor: pointer;
         text-decoration: none;
@@ -236,7 +236,7 @@ nav .fa-bars {
         text-decoration: none;
         border: none;
         border-bottom: 5px solid  #4b4a4a;
-        text-shadow: 0px -2px #27ae60;
+        text-shadow: 0px -2px #005167;
         -webkit-transition: all 0.1s;
         transition: all 0.1s;
 
@@ -295,7 +295,7 @@ nav .fa-bars {
     font-size: 1.5rem;
 }
 .start-btn { 
-    background: #079a82;
+    background: #005167;
     padding: 15px;
     margin: 60px auto;
     color: whitesmoke;
@@ -310,15 +310,15 @@ nav .fa-bars {
     border-bottom: 5px solid  #4b4a4a;
     cursor: pointer;
     text-decoration: none;
-    text-shadow: 0px -2px #27ae60;
+    text-shadow: 0px -2px #467F8E;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
 }
 .start-btn:hover, start-btn:active {
     -webkit-transform: translate(0px,5px);
- -ms-transform: translate(0px,5px);
- transform: translate(0px,5px);
- border-bottom: 1px solid #2ecc71;
+    -ms-transform: translate(0px,5px);
+    transform: translate(0px,5px);
+    border-bottom: 1px solid #C1FAFF;
 }
 /*
 
@@ -397,7 +397,7 @@ nav .fa-bars {
     border-radius: 2px;
 }
 
-/*----------------------2nd page list nav bar--------------------*/
+/*----------------------index 2nd page list nav bar--------------------*/
 .navbar-white {
     background: white;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);  /*shadow effect on the navbar*/
@@ -416,13 +416,152 @@ nav.navbar-white .active::after {
     background: #079a82;
 }
 
+/*Container info Apartments*/
+
+.list-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-col {
+    flex-basis: 70%; /*La propiedad de CSS flex-basis especifíca la base flexible, la cual es el tamaño inicial de un elemento flexible. Ésta propiedad determina el tamaño de una caja de contenidos a no ser que se haya especificado de otra forma usando box-sizing.*/
+}
+
+.right-col {
+    flex-basis: 25%;
+}
+
+.left-col  h1 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+/*details of the size houses and info*/
+.house {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc; /*line between image and title*/
+}
+
+.house-img {
+    flex-basis: 40%;
+}
+
+.house-info{
+    flex-basis: 58%;
+    color: #555;
+}
+
+.house-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.house-info h3 {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.3rem;
+    margin: 4px 0;
+}
+
+.house-info i {
+    color: #467F8E;
+    font-size: 1.1rem;
+    margin: 10px 1px;
+}
+.house-price {
+    text-align: right;
+}
+
+.house-price h4 {
+    font-size: 1.25rem;
+}
+.house-price h4 span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*<!----------INDEXH2 right column side bar------------->*/
+
+.sidebar {
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.sidebar h2 {
+    font-weight: 500;
+}
+
+.sidebar h3 {
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.filter p {
+    flex: 1;
+}
+.filter input {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+
+.sidebar-link a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.right-arrow {
+    transform: rotate(180deg); /*rotate de arrow, is so good this effect to recycle element*/
+}
+
+.pagination span {
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pagination .current {
+    background: #333;
+    color: #fff;
+}
+
+/*Pagination: ver siguiente pagina de inmuebles <1,2,3---20>*/
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.pagination img {
+    width: 15px;
+}
+
 /*for small screen devices*/
 
 @media only screen and (max-width: 700px) {
     .logo {
         position: fixed;
-        top: 1%;
-        left:5%;
+        top: 2%;
+        left:3%;
     }
     nav {
         position: fixed;
@@ -515,5 +654,32 @@ nav.navbar-white .active::after {
     }
     .about-msg {
         font-size: 1rem;
+    }
+}
+
+/*for small screen devices index2.html*/
+
+@media only screen and (max-width: 700px) {
+    .list-container{
+        margin-top: 150px;
+    }
+    .left-col, .right-col, .house-img, .house-info {
+        flex-basis: 100%;
+    }
+    .left-col h1 {
+        font-size: 1.3rem;
+    }
+    .house-info h3 {
+        font-size: 1.1rem;
+    }
+    .house-info i {
+        font-size: 1rem;
+    }
+    .pagination span {
+        margin:  10px 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px; /*me acomoda la altura del txt dentro del circulito*/
+        font-size: 0.75rem;
     }
 }
