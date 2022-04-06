@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!--favicons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <!--JavaScript-->
+    <script src="./index.js" defer> </script>
+    <title>House Details page3</title>
+</head>
+<body>
+    
+    <nav id="navBar"  class="navbar-white">
+        <a href="./index.html">
+            <img src="./images/logo-red.png" class="logo" alt="logo">
+        </a><!--clic al logo para volver atrás-->
+      
+        <ul class="nav-links">
+        <li><a href="./index.html" class="active">Popular Places</a></li>
+        <li><a href="./index2.html">Travel Outside</a></li>
+        <li><a href="./index3.html">Online Packages</a></li>
+       </ul>
+    <a href="#" class="register-btn">Register</a>
+    <i class="fas fa-bars" onclick="togglebtn()"></i>
+</nav>
+<!--detalles de la casa | info house details-->
+<div class="house-details">
+    <div class="house-title">
+        <h1>Wenge House</h1>
+        <div class="row">
+            <div>
+            <!--------stars reviews---------->
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <!--<i class="far fa-star"></i> empty star-->
+            <i class="fas fa-star-half-alt"></i> 
+            <span>245 Reviews</span>
+        </div>
+        <!--location info-->
+        <div>
+            <p>Location San Francisco, California , United States.</p>
+        </div>
+    </div>
+    </div>
+    <!-- div container of the house img gallery-->
+    <div class="gallery"> 
+        <div class="gallery-img-1"> <img src="./images/house-1.png" alt="house img"> </div>
+        <div> <img src="./images/house-2.png" alt="house img"> </div>
+        <div> <img src="./images/house-3.png" alt="house img"> </div>
+        <div> <img src="./images/house-4.png" alt="house img"> </div>
+        <div> <img src="./images/house-5.png" alt="house img"> </div>
+    </div>
+    <div class="small-details">
+        <h2>Entire Rental unit Hosted by Brandon</h2>
+        <p>2 guest &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 bathroom</p> <!--nbsp es un espacio, none breaking space-->
+        <h4>$ 100 / day</h4>
+    </div>
+    <hr class="line">
+    <!--form availability-->
+    <form class="check-form">
+        <div>
+            <label>Check-In</label>
+            <input type="text" placeholder="Add Date">
+        </div>
+
+        <div>
+            <label>Check-Out</label>
+            <input type="text" placeholder="Add Date">
+        </div>
+
+        <div class="guest-field">
+            <label>Guest</label>
+            <input type="text" placeholder="0-2 guest">
+        </div>
+        <button type="submit">Check Availability</button>
+    </form>
+
+    <ul class="details-list">
+        <li> <i class="fas fa-home"></i> Entire Home
+            <span>You will have the entire flat or you</span>
+        </li>
+
+        <li><i class="fas fa-paint-brush"></i> Enhanced Clean
+            <span>This Host has commited to staybnb's cleaning process.</span>
+        </li>
+
+        <li><i class="fas fa-map-marker-alt"></i>Great Location
+            <span>90% of recent guests gave the location a 5 star rating.</span>
+        </li>
+
+        <li><i class="fas fa-heart"></i>Great Check-in Experience
+            <span>100% of recent guests fave the check-in process a 5 star rating.</span>
+        </li>
+    </ul>
+
+    <hr class="line">
+
+    <p class="home-desc">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores dolorem inventore incidunt eveniet voluptates voluptatem aliquid, non reiciendis, ea et? Minus suscipit fugiat sequi voluptatem tempora voluptas eius doloribus?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eveniet sunt nesciunt ad natus modi incidunt distinctio sequi repellendus dolores, dolore ex temporibus tenetur vitae facere non vero fuga esse.
+    Illo sint doloremque ullam obcaecati architecto quia eveniet cum facilis labore deleniti ratione dicta, odit voluptatibus eos itaque dolor rem est expedita quo a! Animi tempora pariatur dolorem vero a?
+    </p>
+    <hr class="line">
+    
+    <div class="map">
+        <h3>Location on map</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0488378804803!2d-122.4002886851739!3d37.78889521912091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085806325afffed%3A0x64bfb821ac3a16d!2s535%20Mission%20St%2014th%20floor%2C%20San%20Francisco%2C%20CA%2094105%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1649284315836!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <b>San Francisco, California, United States.</b>
+        <p>It's like a home away from home.</p>
+    </div>
+    
+    <hr class="line">
+
+    <div class="host">
+        <img src="./images/host.png" alt="host">
+        <div>
+            <h2>Hosted by Brandon</h2>
+            <p><span>
+                <!--------stars reviews---------->
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>    
+            </span>&nbsp; &nbsp; 245 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp;
+        Response time: 60min.</p>
+        </div>
+    </div>
+
+    <a href="#" class="contact-host">Contact Host</a>
+</div>
+
+<div class="container">  <!---------container del Footer| footer container--------->
+    <!---------Footer ICON LINKS--------->
+    <div class="footer">
+        <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+        <a href="#"> <i class="fab fa-youtube"></i> </a>
+        <a href="#"> <i class="fab fa-twitter"></i> </a>
+        <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+        <a href="#"> <i class="fab fa-instagram"></i> </a>
+        <hr>
+        <p>Copyright © 2022 Rental Luxury.</p>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

@@ -555,7 +555,172 @@ nav.navbar-white .active::after {
     width: 15px;
 }
 
-/*for small screen devices*/
+/*-----------------House Details Page INdex3.html-----------------------*/
+.house-details{
+    padding: 0 12%;
+}
+
+.house-title {
+    margin-top: 50px;
+}
+.house-title h1 {
+    font-weight: 600;
+}
+.house-title .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+.house-title span {
+    margin: 0 20px;
+}
+
+.house-title i {
+    color: #ff5361;
+}
+
+/* still index3.html : div container of the house img gallery*/
+
+.gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'first first . .' 'first first . .'; /*efecto miniatura de img al costado de la primera*/
+    margin: 20px 0;
+} 
+.gallery div img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.gallery-img-1 {
+    grid-area: first;
+}
+
+.small-details h2 {
+    font-weight: 500;
+}
+.small-details h4 {
+    text-align: right;
+    font-size: 22px;
+}
+/*line at the bottom*/
+.line {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+
+.check-form {
+    margin: 30px 0;
+    background: #fff;
+    box-shadow:  0 0 30px rgba(0,0,0,0.3); /*shadow around the form- sombra que rodea el form*/
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+}
+.check-form label {
+    display: block;
+}
+.check-form div {
+    padding: 20px;
+}
+.check-form input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+.check-form button {
+    background: #ff5361;
+    border: 0;
+    outline: none;
+    color: #FFF;
+    padding: 18px;
+    width: 300px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.guest-field{
+    flex: 1;
+}
+.details-list{
+    list-style: none;
+    margin: 50px 0;
+}
+.details-list  li {
+    margin-left: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #555;
+    position: relative;
+}
+.details-list li i { /*acomodando los iconos <i>*/
+    position: absolute;
+    top: 5px;
+    left: -40px;
+}
+.details-list li span {
+    display: block;
+    font-weight: 400;  
+    font-size: 1rem;
+}
+
+.home-desc {  /*container del p*/
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.map {
+    margin: 50px 0;
+}
+.map iframe {
+    width:100%;
+    margin-bottom: 30px;
+}
+.map h3{
+    font-size: 1.3;
+    font-weight:500;
+    margin-bottom: 30px;
+}
+.map b {
+    display:block 
+}
+
+.host {
+    display: flex;
+    align-items: center;
+}
+.host img {  /*host image*/
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.host h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.host i {
+    color: #ff5361;
+}
+/*host contacto*/
+.contact-host {
+    display: inline-block;
+    margin: 40px 0 40px 120px;
+    text-decoration: none;
+    color: #555;
+    padding: 15px 50px;
+    border: 1px solid #ff5361;
+    border-radius: 8px;
+}
+
+
+/*for small screen devices index-1*/
 
 @media only screen and (max-width: 700px) {
     .logo {
@@ -682,4 +847,50 @@ nav.navbar-white .active::after {
         line-height: 30px; /*me acomoda la altura del txt dentro del circulito*/
         font-size: 0.75rem;
     }
+}
+
+/*media queries fo index.html3*/
+@media only screen and (max-width: 700px) {
+.house-details{
+    margin-top: 150px;
+}
+.row p{
+    margin-top: 10px;
+}
+.gallery {
+    grid-template-areas: 'first first' '.. ' '..';
+}
+.small-details h2 {
+    font-size: 1.2rem;
+    margin-top: 24px;
+}
+.small-details h4{
+    text-align: left;
+    margin: 10px 0;
+    font-size: 1.1rem;
+} 
+.check-form {
+    padding: 10px 30px;
+}
+.check-form div{
+    padding: 20px 0;
+    width: 100%;
+}
+.check-form input {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.check-form button {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.host {
+    display: block;
+    line-height: 28px;
+}
+.contact-host {
+    margin: 40px 0;
+}
 }
